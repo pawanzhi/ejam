@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="product_details_fetch.list">
+      <field name="name">product_details_fetch list</field>
+      <field name="model">product_details_fetch.product_details_fetch</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="product_details_fetch.action_window">
+      <field name="name">product_details_fetch window</field>
+      <field name="res_model">product_details_fetch.product_details_fetch</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="product_details_fetch.action_server">
+      <field name="name">product_details_fetch server</field>
+      <field name="model_id" ref="model_product_details_fetch_product_details_fetch"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="product_details_fetch" id="product_details_fetch.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="product_details_fetch.menu_1" parent="product_details_fetch.menu_root"/>
+    <menuitem name="Menu 2" id="product_details_fetch.menu_2" parent="product_details_fetch.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="product_details_fetch.menu_1_list" parent="product_details_fetch.menu_1"
+              action="product_details_fetch.action_window"/>
+    <menuitem name="Server to list" id="product_details_fetch" parent="product_details_fetch.menu_2"
+              action="product_details_fetch.action_server"/>
+    -->
+  </data>
+</odoo>
